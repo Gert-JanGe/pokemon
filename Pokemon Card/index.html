@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Card CSS</title>
+
+    <style>
+        .card{
+            background-color: yellow;
+            width: 60mm;
+            height: 85mm;
+            padding: 3mm;
+            border-radius: 10px;
+        }
+
+        .inner-card{
+            background-color: green;
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .image{
+            border: 2px solid yellow;
+            height: 35mm;
+            margin-left: 3mm;
+            margin-right: 3mm;
+        }
+
+        .header{
+            border: 2mm solid deeppink;
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .purple{
+            border: 1mm solid purple;
+        }
+
+        .green{
+            border: 1mm solid white;
+        }
+
+        .hp-container{
+            display: flex;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="inner-card">
+            <div class="header">
+                <div class="purple">Scyther</div>
+                <div class="purple hp-container">
+                    <div class="green">70 HP</div>
+                    <div class="green">G</div>
+                </div>
+            </div>
+            <div class="image">2</div>
+            <div>3</div>
+        </div>
+    </div>
+</body>
+</html>
